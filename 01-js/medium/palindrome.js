@@ -7,7 +7,17 @@
 */
 
 function isPalindrome(str) {
-  return true;
+  str = str.split(' ').str.join('').toLowerCase();
+  var reverseStr = str.split("").reverse().join("");
+  if(str===reverseStr){
+  return true;}
+  else{
+    return false;
+  }
 }
+
+var aString = 'Top Spot';
+
+var result = isPalindrome(aString);
 
 module.exports = isPalindrome;
