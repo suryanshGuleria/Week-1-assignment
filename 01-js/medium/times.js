@@ -7,6 +7,16 @@ Try running it for
 Hint - use Date class exposed in JS
 */
 
-function calculateTime(n) {
-    return 0.01;
+function calculateTime(sumOf) {
+    var sum = 0;
+    var startTime = Date.now();
+    while(sumOf){
+      sum+=sumOf;
+      sumOf--;
+    }
+     return (Date.now()-startTime);   
 }
+
+var sumOfFirst = 10000000;
+var time = calculateTime(sumOfFirst);
+console.log('This opertaion took total of ' + time + 'ms to complete');
