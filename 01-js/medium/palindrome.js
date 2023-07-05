@@ -7,7 +7,7 @@
 */
 
 function isPalindrome(str) {
-  str = str.split(' ').str.join('').toLowerCase();
+  str = str.split(' ').str.join('').toLowerCase(); //this is done to remove any space from the input as a sentence can be a palindrome.
   var reverseStr = str.split("").reverse().join("");
   if(str===reverseStr){
   return true;}
